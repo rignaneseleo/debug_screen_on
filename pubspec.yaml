@@ -1,0 +1,28 @@
+name: debug_screen_on
+description: A Flutter plugin that keeps the screen on during debugging sessions when a debugger is attached or ADB is enabled.
+version: 1.0.2
+homepage: https://github.com/rignaneseleo/debug_screen_on
+repository: https://github.com/rignaneseleo/debug_screen_on
+issue_tracker: https://github.com/rignaneseleo/debug_screen_on/issues
+maintainer: Leonardo Rignanese (@leorigna)
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.leorigna.debug_screen_on
+        pluginClass: DebugScreenOnPlugin
